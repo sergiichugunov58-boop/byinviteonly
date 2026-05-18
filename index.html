@@ -1,0 +1,2598 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="By Invite Only — премиальное агентство полного цикла. Высококонверсионный сайт + автоматизация + CRM + реклама + SMM. Полная система роста бизнеса.">
+<meta name="keywords" content="маркетинговое агентство, реклама Meta TikTok Google, SMM, CRM, автоматизация бизнеса, growth agency">
+<meta property="og:title" content="By Invite Only — Premium Growth Agency">
+<meta property="og:description" content="Полная система привлечения клиентов. Сайт + автоматизация + CRM + реклама + SMM как одна мощная машина роста.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200">
+<meta name="robots" content="index, follow">
+<title>By Invite Only — Premium Growth Agency</title>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "By Invite Only",
+  "description": "Premium full-cycle growth agency. Website + automation + CRM + advertising + SMM",
+  "serviceType": "Digital Marketing Agency",
+  "areaServed": "Worldwide",
+  "offers": [
+    {"@type": "Offer", "name": "Launch", "price": "2500", "priceCurrency": "USD"},
+    {"@type": "Offer", "name": "Growth", "price": "5000", "priceCurrency": "USD"},
+    {"@type": "Offer", "name": "Dominance", "price": "12000", "priceCurrency": "USD"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Bricolage+Grotesque:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+/* ===== CSS ПЕРЕМЕННЫЕ / CSS VARIABLES ===== */
+:root {
+  --electric: #00F0FF;
+  --neon-purple: #C724FF;
+  --gold: #FFD700;
+  --bg-primary: #020408;
+  --bg-secondary: #060c14;
+  --bg-card: rgba(10, 20, 35, 0.7);
+  --text-primary: #F0F6FF;
+  --text-secondary: rgba(180,200,230,0.7);
+  --border: rgba(0,240,255,0.12);
+  --glass: rgba(0, 240, 255, 0.04);
+  --glow-electric: 0 0 40px rgba(0,240,255,0.3);
+  --glow-purple: 0 0 40px rgba(199,36,255,0.3);
+  --glow-gold: 0 0 30px rgba(255,215,0,0.25);
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --font-body: 'Bricolage Grotesque', sans-serif;
+}
+
+[data-theme="light"] {
+  --bg-primary: #F0F4FF;
+  --bg-secondary: #E4EAF8;
+  --bg-card: rgba(255,255,255,0.7);
+  --text-primary: #0A0F1E;
+  --text-secondary: rgba(20,30,60,0.6);
+  --border: rgba(0,180,255,0.2);
+  --glass: rgba(0,180,255,0.06);
+  --glow-electric: 0 0 30px rgba(0,180,255,0.2);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* ===== ТИПОГРАФИЯ / TYPOGRAPHY ===== */
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+/* ===== ГЛОБАЛЬНЫЕ СТИЛИ / GLOBAL STYLES ===== */
+.electric { color: var(--electric); }
+.purple { color: var(--neon-purple); }
+.gold { color: var(--gold); }
+
+.glow-text-electric {
+  text-shadow: 0 0 20px rgba(0,240,255,0.6), 0 0 60px rgba(0,240,255,0.3);
+}
+.glow-text-purple {
+  text-shadow: 0 0 20px rgba(199,36,255,0.6), 0 0 60px rgba(199,36,255,0.3);
+}
+.glow-text-gold {
+  text-shadow: 0 0 20px rgba(255,215,0,0.5), 0 0 50px rgba(255,215,0,0.2);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--electric) 0%, var(--neon-purple) 50%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-ep {
+  background: linear-gradient(135deg, var(--electric) 0%, var(--neon-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== СТЕКЛЯННЫЕ КАРТОЧКИ / GLASS CARDS ===== */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-card:hover {
+  border-color: rgba(0,240,255,0.3);
+  box-shadow: var(--glow-electric);
+  transform: translateY(-4px);
+}
+
+/* ===== КНОПКИ / BUTTONS ===== */
+.btn-primary {
+  background: linear-gradient(135deg, var(--electric), var(--neon-purple));
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 16px 36px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.btn-primary:hover::before { opacity: 1; }
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(0,240,255,0.4), 0 0 80px rgba(199,36,255,0.2);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--electric);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 15px 35px;
+  border-radius: 50px;
+  border: 1px solid var(--electric);
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.btn-outline:hover {
+  background: rgba(0,240,255,0.1);
+  box-shadow: var(--glow-electric);
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold), #FFA500);
+  color: #000;
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 18px 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 50px rgba(255,215,0,0.4);
+}
+
+/* ===== НЕЙРОННАЯ СЕТЬ / NEURAL CANVAS ===== */
+#neural-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ===== НАВБАР / NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 40px;
+  transition: all 0.4s;
+}
+.navbar.scrolled {
+  background: rgba(2,4,8,0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 40px;
+}
+[data-theme="light"] .navbar.scrolled {
+  background: rgba(240,244,255,0.85);
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.logo-dot {
+  width: 6px; height: 6px;
+  background: var(--electric);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--electric), 0 0 20px var(--electric);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+.lang-toggle {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 6px;
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+}
+.lang-btn {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text-secondary);
+  transition: all 0.3s;
+  letter-spacing: 0.05em;
+}
+.lang-btn.active {
+  background: linear-gradient(135deg, var(--electric), var(--neon-purple));
+  color: #fff;
+}
+
+.theme-toggle {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+.theme-toggle:hover {
+  border-color: var(--electric);
+  box-shadow: var(--glow-electric);
+}
+
+/* ===== HERO СЕКЦИЯ / HERO SECTION ===== */
+#hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(0,240,255,0.06) 0%, transparent 70%),
+              radial-gradient(ellipse 60% 50% at 80% 20%, rgba(199,36,255,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse 50% 40% at 20% 80%, rgba(255,215,0,0.04) 0%, transparent 60%);
+}
+[data-theme="light"] .hero-bg {
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(0,180,255,0.08) 0%, transparent 70%),
+              radial-gradient(ellipse 60% 50% at 80% 20%, rgba(199,36,255,0.06) 0%, transparent 60%);
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0,240,255,0.08);
+  border: 1px solid rgba(0,240,255,0.25);
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--electric);
+  margin-bottom: 32px;
+  animation: badge-glow 3s ease-in-out infinite;
+}
+@keyframes badge-glow {
+  0%,100% { box-shadow: 0 0 15px rgba(0,240,255,0.2); }
+  50% { box-shadow: 0 0 30px rgba(0,240,255,0.4), 0 0 60px rgba(0,240,255,0.1); }
+}
+.badge-dot {
+  width: 6px; height: 6px;
+  background: var(--electric);
+  border-radius: 50%;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 7vw, 90px);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.hero-subtitle {
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--text-secondary);
+  max-width: 580px;
+  margin: 0 auto 48px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.stat-item { text-align: center; }
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+/* ===== АНИМАЦИИ ПОЯВЛЕНИЯ / FADE-IN ANIMATIONS ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-up:nth-child(2) { transition-delay: 0.1s; }
+.fade-up:nth-child(3) { transition-delay: 0.2s; }
+.fade-up:nth-child(4) { transition-delay: 0.3s; }
+
+/* ===== СЕКЦИИ / SECTIONS ===== */
+.section {
+  padding: 120px 0;
+  position: relative;
+}
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--electric);
+  margin-bottom: 16px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.section-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ===== GROWTH OS СХЕМА / GROWTH OS DIAGRAM ===== */
+.os-flow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 4px;
+  position: relative;
+}
+.os-node {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s;
+  cursor: default;
+  backdrop-filter: blur(20px);
+}
+.os-node:hover {
+  border-color: var(--electric);
+  box-shadow: 0 0 30px rgba(0,240,255,0.2);
+  transform: translateY(-6px);
+}
+.os-node.active {
+  border-color: var(--electric);
+  box-shadow: 0 0 20px rgba(0,240,255,0.3);
+}
+.os-icon {
+  width: 56px; height: 56px;
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 16px;
+}
+.os-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--electric);
+  font-size: 20px;
+  animation: arrow-pulse 2s ease-in-out infinite;
+}
+@keyframes arrow-pulse {
+  0%,100% { opacity: 0.4; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(4px); }
+}
+
+/* ===== ДАШБОРД / DASHBOARD ===== */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .dashboard-grid { grid-template-columns: repeat(4, 1fr); }
+}
+.dash-metric {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+}
+.dash-metric::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--electric), var(--neon-purple));
+}
+.metric-value {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.metric-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.metric-delta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #00FF88;
+  margin-top: 8px;
+}
+
+/* ===== МИНИ БАР-ГРАФИК / MINI BAR CHART ===== */
+.mini-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 40px;
+  margin-top: 12px;
+}
+.bar {
+  flex: 1;
+  border-radius: 3px 3px 0 0;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  background: linear-gradient(to top, var(--electric), var(--neon-purple));
+  animation: bar-grow 1s cubic-bezier(0.4,0,0.2,1) forwards;
+  transform-origin: bottom;
+  transform: scaleY(0);
+}
+@keyframes bar-grow {
+  to { transform: scaleY(1); }
+}
+
+/* ===== КАЛЬКУЛЯТОР ROI / ROI CALCULATOR ===== */
+.calculator-section {
+  background: linear-gradient(135deg, rgba(0,240,255,0.03), rgba(199,36,255,0.03));
+  border-radius: 32px;
+  border: 1px solid var(--border);
+  padding: 60px;
+}
+@media (max-width: 768px) {
+  .calculator-section { padding: 32px 20px; }
+}
+.calc-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border);
+  outline: none;
+  cursor: pointer;
+}
+.calc-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--electric), var(--neon-purple));
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,240,255,0.5);
+}
+.calc-result-box {
+  background: linear-gradient(135deg, rgba(0,240,255,0.1), rgba(199,36,255,0.1));
+  border: 1px solid rgba(0,240,255,0.3);
+  border-radius: 24px;
+  padding: 40px;
+  text-align: center;
+}
+.result-big {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 7vw, 80px);
+  font-weight: 800;
+  line-height: 1;
+  margin: 12px 0;
+}
+
+/* ===== AI СИМУЛЯТОР / AI SIMULATOR ===== */
+.simulator-input {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 24px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.3s;
+}
+.simulator-input:focus {
+  border-color: var(--electric);
+  box-shadow: 0 0 20px rgba(0,240,255,0.15);
+}
+.simulator-result {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid rgba(0,240,255,0.3);
+  border-radius: 20px;
+  padding: 32px;
+  margin-top: 24px;
+  animation: fadeIn 0.5s ease;
+}
+.simulator-result.show { display: block; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== КЕЙСЫ / CASES ===== */
+.case-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  transition: all 0.4s;
+}
+.case-card:hover {
+  border-color: rgba(199,36,255,0.4);
+  box-shadow: 0 0 40px rgba(199,36,255,0.15);
+  transform: translateY(-6px);
+}
+.case-before-after {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 16px;
+  align-items: center;
+}
+.case-metric-box {
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+.before-box { background: rgba(255,50,50,0.08); border: 1px solid rgba(255,50,50,0.2); }
+.after-box { background: rgba(0,255,136,0.08); border: 1px solid rgba(0,255,136,0.2); }
+.arrow-box {
+  font-size: 24px;
+  color: var(--electric);
+}
+
+/* ===== ПРОЦЕСС / PROCESS ===== */
+.process-step {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+}
+.process-step:hover {
+  background: var(--bg-card);
+  border-color: var(--border);
+}
+.step-num {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+  min-width: 60px;
+  background: linear-gradient(135deg, var(--electric), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== ПАКЕТЫ / PACKAGES ===== */
+.package-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 48px 36px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  transition: all 0.4s;
+}
+.package-card:hover { transform: translateY(-8px); }
+.package-card.featured {
+  border-color: var(--electric);
+  box-shadow: 0 0 40px rgba(0,240,255,0.2), inset 0 0 40px rgba(0,240,255,0.02);
+}
+.package-badge {
+  position: absolute;
+  top: 20px; right: 20px;
+  background: linear-gradient(135deg, var(--electric), var(--neon-purple));
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+.price-big {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1;
+}
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.feature-check { color: var(--electric); font-size: 16px; flex-shrink: 0; }
+
+/* ===== ОТЗЫВЫ / TESTIMONIALS ===== */
+.testimonial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 36px;
+  backdrop-filter: blur(20px);
+  transition: all 0.4s;
+}
+.testimonial-card:hover {
+  border-color: rgba(255,215,0,0.3);
+  box-shadow: var(--glow-gold);
+}
+.stars { color: var(--gold); font-size: 18px; letter-spacing: 2px; }
+.quote-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 16px 0;
+}
+.author-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+}
+.author-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  letter-spacing: 0.08em;
+}
+
+/* ===== ФОРМА / FORM ===== */
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 20px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-primary);
+  outline: none;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--electric);
+  box-shadow: 0 0 20px rgba(0,240,255,0.12);
+}
+.form-select option { background: #060c14; }
+.form-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ===== CTA СЕКЦИЯ / CTA SECTION ===== */
+.cta-bg {
+  background: linear-gradient(135deg, rgba(0,240,255,0.05), rgba(199,36,255,0.05), rgba(255,215,0,0.03));
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  padding: 100px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(0,240,255,0.08), transparent);
+  pointer-events: none;
+}
+
+/* ===== ФУТЕР / FOOTER ===== */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 60px 40px 40px;
+}
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ===== МОБИЛЬНЫЙ / MOBILE ===== */
+@media (max-width: 768px) {
+  .navbar { padding: 16px 20px; }
+  .navbar.scrolled { padding: 12px 20px; }
+  .hero-stats { gap: 24px; }
+  .os-arrow { transform: rotate(90deg); }
+  .case-before-after { grid-template-columns: 1fr; }
+  .arrow-box { transform: rotate(90deg); }
+  .process-step { flex-direction: column; gap: 16px; }
+  .cta-bg { padding: 60px 24px; }
+}
+
+/* ===== СКРОЛЛБАР / SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--electric), var(--neon-purple));
+  border-radius: 3px;
+}
+
+/* ===== FLOATING PARTICLES ===== */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float-particle linear infinite;
+}
+@keyframes float-particle {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+
+/* ===== THANK YOU ===== */
+.thank-you {
+  display: none;
+  text-align: center;
+  padding: 60px 40px;
+  animation: fadeIn 0.6s ease;
+}
+.thank-you.show { display: block; }
+.thank-you-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+  animation: bounce-icon 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes bounce-icon {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ===== LIVE INDICATOR ===== */
+.live-dot {
+  width: 8px; height: 8px;
+  background: #00FF88;
+  border-radius: 50%;
+  animation: live-pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 0 0 rgba(0,255,136,0.5);
+}
+@keyframes live-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0,255,136,0.5); }
+  70% { box-shadow: 0 0 0 8px rgba(0,255,136,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,255,136,0); }
+}
+
+/* ===== MOBILE NAV ===== */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(2,4,8,0.97);
+  z-index: 99;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  backdrop-filter: blur(30px);
+}
+.mobile-menu.open { display: flex; }
+
+/* ===== HORIZONTAL SCROLL TAGS ===== */
+.tags-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tags-scroll::-webkit-scrollbar { display: none; }
+.tag {
+  flex-shrink: 0;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+
+<!-- ===== КОНФИГУРАЦИЯ / CONFIGURATION OBJECT ===== -->
+<script>
+// ==========================================
+// ГЛАВНЫЙ КОНФИГ / MAIN CONFIG OBJECT
+// Здесь хранятся все тексты, данные и настройки сайта
+// ==========================================
+const CONFIG = {
+  // Текущий язык (ru / en)
+  currentLang: 'ru',
+  currentTheme: 'dark',
+
+  // Контактные данные
+  contacts: {
+    whatsapp: '+79001234567',
+    telegram: '@byinviteonly',
+    email: 'hello@byinviteonly.com',
+  },
+
+  // Тексты на двух языках
+  texts: {
+    ru: {
+      // Навбар
+      nav: {
+        logo: 'BY INVITE ONLY',
+        links: ['Growth OS', 'Дашборд', 'Кейсы', 'Пакеты', 'Контакт'],
+        hrefs: ['#growth-os', '#dashboard', '#cases', '#packages', '#cta'],
+        cta: 'Получить доступ',
+      },
+      // Hero
+      hero: {
+        badge: '🔐 ЗАКРЫТОЕ АГЕНТСТВО — ТОЛЬКО ПО ПРИГЛАШЕНИЮ',
+        title_line1: 'Система',
+        title_line2: 'роста,',
+        title_line3: 'которая',
+        title_line4: 'не спит.',
+        subtitle: 'Полная интеграция: сайт, CRM, автоматизация, реклама и SMM работают как одна автономная машина привлечения клиентов.',
+        cta1: 'Запустить систему',
+        cta2: 'Посмотреть кейсы',
+        stats: [
+          { num: '340%', label: 'Средний рост ROAS' },
+          { num: '12+', label: 'Ниш освоено' },
+          { num: '4.8×', label: 'Средний ROI клиентов' },
+          { num: '98%', label: 'Клиентов продляют' },
+        ],
+      },
+      // Growth OS
+      growthOS: {
+        label: 'Архитектура системы',
+        title: 'Growth OS',
+        subtitle: 'Пять взаимосвязанных модулей, которые работают синхронно 24/7, превращая трафик в выручку.',
+        nodes: [
+          { icon: '⚡', title: 'Высококонверсионный сайт', desc: 'Landing или multi-page, оптимизированный под конверсию', color: 'rgba(0,240,255,0.15)' },
+          { icon: '🤖', title: 'Автоматизация и CRM', desc: 'Мгновенные уведомления, обработка заявок, мини-CRM', color: 'rgba(199,36,255,0.15)' },
+          { icon: '📊', title: 'Дашборд и аналитика', desc: 'Live-дашборд с ключевыми метриками в реальном времени', color: 'rgba(255,215,0,0.1)' },
+          { icon: '🎯', title: 'Реклама Meta / TikTok / Google', desc: 'Настройка и ведение рекламных кампаний под ключ', color: 'rgba(0,240,255,0.15)' },
+          { icon: '🌟', title: 'SMM: TikTok / IG / FB / YT', desc: 'Профессиональное ведение аккаунтов и создание контента', color: 'rgba(199,36,255,0.15)' },
+        ],
+      },
+      // Dashboard
+      dashboard: {
+        label: 'Живой дашборд',
+        title: 'Видите каждый рубль',
+        subtitle: 'Все данные — в одном красивом дашборде. Знайте, что работает, прямо сейчас.',
+        metrics: [
+          { value: 847, prefix: '', suffix: '', label: 'Заявок сегодня', delta: '+23% vs вчера', color: 'var(--electric)' },
+          { value: 4.8, prefix: '×', suffix: '', label: 'Средний ROAS', delta: '+0.4 vs прошл. нед.', color: 'var(--neon-purple)' },
+          { value: 2.3, prefix: '$', suffix: '', label: 'Цена заявки (CPL)', delta: '−18% vs прошл.', color: 'var(--gold)' },
+          { value: 94, prefix: '', suffix: '%', label: 'Открываемость писем', delta: '+11% vs норма', color: '#00FF88' },
+        ],
+        chartLabel: 'Заявки за 7 дней',
+        chartData: [45, 67, 52, 89, 134, 178, 847],
+      },
+      // ROI Калькулятор
+      calculator: {
+        label: 'ROI-калькулятор',
+        title: 'Посчитайте свою прибыль',
+        subtitle: 'Введите данные вашего бизнеса — получите реальный расчёт.',
+        fields: {
+          budget: 'Рекламный бюджет в месяц ($)',
+          avgCheck: 'Средний чек клиента ($)',
+          convRate: 'Текущая конверсия сайта (%)',
+        },
+        resultLabel: 'Ваш потенциальный доход в месяц',
+        resultSub: 'при работе с системой By Invite Only',
+        ctaAfter: 'Хочу такой результат',
+        multiplier: 4.8,
+        extraLabel: 'Прирост к текущему результату',
+      },
+      // AI Симулятор
+      simulator: {
+        label: 'AI-симулятор ниши',
+        title: 'Введите вашу нишу',
+        subtitle: 'Получите мгновенное превью стратегии для вашего бизнеса.',
+        placeholder: 'Например: стоматология, фитнес-клуб, онлайн-школа...',
+        btnText: 'Сгенерировать стратегию',
+        ctaAfter: 'Запустить систему для моей ниши',
+        results: {
+          default: {
+            tag: 'Анализ завершён',
+            headline: 'Стратегия для вашей ниши готова',
+            metrics: [
+              { label: 'Потенциал охвата', val: '180K–420K' },
+              { label: 'Прогноз CPL', val: '$2–6' },
+              { label: 'Срок окупаемости', val: '3–6 недель' },
+              { label: 'ROAS прогноз', val: '4.2×–7.8×' },
+            ],
+            channels: ['Meta Ads', 'TikTok Organic', 'Google Search', 'Ретаргетинг'],
+            desc: 'Система By Invite Only запускает интегрированную стратегию: сначала захват тёплой аудитории через контент, затем конвертация через таргетированную рекламу с автоматической обработкой заявок.',
+          },
+        },
+      },
+      // Кейсы
+      cases: {
+        label: 'Кейсы клиентов',
+        title: 'Трансформации',
+        subtitle: 'Реальные результаты реальных бизнесов до и после запуска системы.',
+        items: [
+          {
+            niche: 'Стоматология',
+            tag: 'Медицина',
+            tagColor: 'var(--electric)',
+            before: { leads: '12', cpl: '$48', roas: '1.2×' },
+            after: { leads: '186', cpl: '$6', roas: '7.4×' },
+            period: 'за 90 дней',
+            quote: 'Раньше мы тратили деньги на рекламу и не понимали откуда приходят клиенты. Сейчас всё прозрачно.',
+            author: 'Алексей К., владелец клиники',
+          },
+          {
+            niche: 'Онлайн-школа',
+            tag: 'EdTech',
+            tagColor: 'var(--neon-purple)',
+            before: { leads: '34', cpl: '$31', roas: '1.8×' },
+            after: { leads: '412', cpl: '$4.2', roas: '9.1×' },
+            period: 'за 60 дней',
+            quote: 'Система буквально удвоила наш доход за два месяца. Теперь заявки приходят пока я сплю.',
+            author: 'Мария Л., основатель школы',
+          },
+          {
+            niche: 'Фитнес-клуб',
+            tag: 'Wellness',
+            tagColor: 'var(--gold)',
+            before: { leads: '8', cpl: '$72', roas: '0.9×' },
+            after: { leads: '243', cpl: '$8', roas: '6.2×' },
+            period: 'за 75 дней',
+            quote: 'Мы были в минусе. Теперь у нас очередь из клиентов и предоплата за 3 месяца вперёд.',
+            author: 'Денис В., управляющий сетью',
+          },
+        ],
+        beforeLabel: 'ДО',
+        afterLabel: 'ПОСЛЕ',
+        leadsLabel: 'Заявок/мес',
+        cplLabel: 'CPL',
+        roasLabel: 'ROAS',
+      },
+      // Процесс
+      process: {
+        label: 'Как мы работаем',
+        title: 'Запуск системы',
+        subtitle: '5 этапов от первой встречи до автономного привлечения клиентов.',
+        steps: [
+          { num: '01', title: 'Стратегическая сессия', desc: 'Глубокий аудит бизнеса, ниши и конкурентов. Разрабатываем индивидуальную стратегию роста.' },
+          { num: '02', title: 'Создание системы', desc: 'Строим сайт, настраиваем CRM, автоматизацию и дашборд. Параллельная работа всех команд.' },
+          { num: '03', title: 'Запуск трафика', desc: 'Настраиваем и запускаем рекламу в Meta, TikTok, Google. Первые заявки через 24–48 часов.' },
+          { num: '04', title: 'Ведение и оптимизация', desc: 'Ежедневный мониторинг, A/B тесты, масштабирование прибыльных связок.' },
+          { num: '05', title: 'Рост и масштаб', desc: 'Регулярные отчёты, стратегические сессии, развитие системы под ваш рост.' },
+        ],
+      },
+      // Пакеты
+      packages: {
+        label: 'Инвестиции',
+        title: 'Выберите пакет',
+        subtitle: 'Три уровня — от запуска до доминирования в нише.',
+        items: [
+          {
+            name: 'Launch',
+            price: '$2,500',
+            period: '/мес',
+            desc: 'Идеально для старта',
+            badge: null,
+            featured: false,
+            features: [
+              'Высококонверсионный лендинг',
+              'Базовая CRM + автоматизация',
+              'Реклама в одной платформе',
+              'Базовый дашборд',
+              '1 SMM-платформа',
+              'Ежемесячный отчёт',
+            ],
+          },
+          {
+            name: 'Growth',
+            price: '$5,000',
+            period: '/мес',
+            desc: 'Оптимально для роста',
+            badge: 'ПОПУЛЯРНЫЙ',
+            featured: true,
+            features: [
+              'Multi-page сайт + лендинги',
+              'Полная CRM + автоматизация',
+              'Реклама Meta + TikTok + Google',
+              'Live-дашборд + аналитика',
+              '3 SMM-платформы',
+              'Еженедельные отчёты',
+              'Приоритетная поддержка',
+            ],
+          },
+          {
+            name: 'Dominance',
+            price: '$12,000',
+            period: '/мес',
+            desc: 'Для лидеров рынка',
+            badge: 'PREMIUM',
+            featured: false,
+            features: [
+              'Экосистема сайтов',
+              'Enterprise CRM + AI-автоматизация',
+              'Все рекламные платформы',
+              'Real-time дашборд + BI',
+              'Все SMM-платформы + продакшн',
+              'Ежедневные отчёты',
+              'Выделенная команда',
+              'Стратег 24/7',
+            ],
+          },
+        ],
+        cta: 'Начать с этого пакета',
+      },
+      // Отзывы
+      testimonials: {
+        label: 'Отзывы',
+        title: 'Говорят клиенты',
+        items: [
+          {
+            stars: 5,
+            text: 'By Invite Only — это не просто агентство. Это партнёр, который мыслит как владелец бизнеса. За 3 месяца наш доход вырос в 4 раза.',
+            name: 'Андрей Ш.',
+            role: 'CEO, медклиника, Москва',
+          },
+          {
+            stars: 5,
+            text: 'Я пробовал 4 агентства до них. Никто не давал такой прозрачности и таких результатов. Дашборд — это отдельный восторг.',
+            name: 'Карина М.',
+            role: 'Основатель, онлайн-школа',
+          },
+          {
+            stars: 5,
+            text: 'Система работает автономно. Заявки приходят ночью, в выходные, в праздники. Мы наконец-то можем сосредоточиться на продукте.',
+            name: 'Игорь В.',
+            role: 'Управляющий, сеть фитнес-клубов',
+          },
+        ],
+      },
+      // CTA и форма
+      cta: {
+        label: 'Готовы к росту?',
+        title: 'Получите доступ к системе',
+        subtitle: 'Мы принимаем ограниченное количество клиентов. Оставьте заявку и мы свяжемся в течение 2 часов.',
+        formTitle: 'Оставить заявку',
+        fields: {
+          name: 'Ваше имя',
+          phone: 'Телефон / WhatsApp',
+          niche: 'Ниша бизнеса',
+          budget: 'Рекламный бюджет',
+          message: 'Расскажите о вашем бизнесе (необязательно)',
+        },
+        budgetOptions: [
+          'До $1,000/мес',
+          '$1,000 — $3,000/мес',
+          '$3,000 — $10,000/мес',
+          'От $10,000/мес',
+        ],
+        submitBtn: 'Отправить заявку',
+        thankYouTitle: 'Заявка получена!',
+        thankYouText: 'Наш стратег свяжется с вами в течение 2 часов. Проверьте WhatsApp и почту.',
+        contactUs: 'Или напишите напрямую',
+      },
+      // Footer
+      footer: {
+        tagline: 'Система роста, которая не спит.',
+        copyright: '© 2025 By Invite Only. Все права защищены.',
+        links: ['Политика конфиденциальности', 'Условия работы'],
+      },
+    },
+
+    en: {
+      nav: {
+        logo: 'BY INVITE ONLY',
+        links: ['Growth OS', 'Dashboard', 'Cases', 'Packages', 'Contact'],
+        hrefs: ['#growth-os', '#dashboard', '#cases', '#packages', '#cta'],
+        cta: 'Get Access',
+      },
+      hero: {
+        badge: '🔐 CLOSED AGENCY — BY INVITATION ONLY',
+        title_line1: 'A growth',
+        title_line2: 'system',
+        title_line3: 'that never',
+        title_line4: 'sleeps.',
+        subtitle: 'Full integration: website, CRM, automation, advertising, and SMM working as one autonomous client acquisition machine.',
+        cta1: 'Launch the System',
+        cta2: 'View Case Studies',
+        stats: [
+          { num: '340%', label: 'Average ROAS Growth' },
+          { num: '12+', label: 'Niches Mastered' },
+          { num: '4.8×', label: 'Average Client ROI' },
+          { num: '98%', label: 'Clients Renew' },
+        ],
+      },
+      growthOS: {
+        label: 'System architecture',
+        title: 'Growth OS',
+        subtitle: 'Five interconnected modules operating in sync 24/7, turning traffic into revenue.',
+        nodes: [
+          { icon: '⚡', title: 'High-Converting Website', desc: 'Landing or multi-page, conversion-optimized', color: 'rgba(0,240,255,0.15)' },
+          { icon: '🤖', title: 'Automation & CRM', desc: 'Instant notifications, lead processing, mini-CRM', color: 'rgba(199,36,255,0.15)' },
+          { icon: '📊', title: 'Dashboard & Analytics', desc: 'Live dashboard with key metrics in real time', color: 'rgba(255,215,0,0.1)' },
+          { icon: '🎯', title: 'Meta / TikTok / Google Ads', desc: 'Full-cycle ad campaign setup and management', color: 'rgba(0,240,255,0.15)' },
+          { icon: '🌟', title: 'SMM: TikTok / IG / FB / YT', desc: 'Professional account management and content creation', color: 'rgba(199,36,255,0.15)' },
+        ],
+      },
+      dashboard: {
+        label: 'Live Dashboard',
+        title: 'See every dollar',
+        subtitle: 'All data in one beautiful dashboard. Know what\u2019s working right now.',
+        metrics: [
+          { value: 847, prefix: '', suffix: '', label: 'Leads today', delta: '+23% vs yesterday', color: 'var(--electric)' },
+          { value: 4.8, prefix: '×', suffix: '', label: 'Average ROAS', delta: '+0.4 vs last week', color: 'var(--neon-purple)' },
+          { value: 2.3, prefix: '$', suffix: '', label: 'Lead Cost (CPL)', delta: '−18% vs prev.', color: 'var(--gold)' },
+          { value: 94, prefix: '', suffix: '%', label: 'Email open rate', delta: '+11% vs benchmark', color: '#00FF88' },
+        ],
+        chartLabel: 'Leads over 7 days',
+        chartData: [45, 67, 52, 89, 134, 178, 847],
+      },
+      calculator: {
+        label: 'ROI Calculator',
+        title: 'Calculate your revenue',
+        subtitle: 'Enter your business data — get a real calculation.',
+        fields: {
+          budget: 'Monthly ad budget ($)',
+          avgCheck: 'Average client check ($)',
+          convRate: 'Current website conversion (%)',
+        },
+        resultLabel: 'Your potential monthly revenue',
+        resultSub: 'with the By Invite Only system',
+        ctaAfter: 'I want this result',
+        multiplier: 4.8,
+        extraLabel: 'Growth above current result',
+      },
+      simulator: {
+        label: 'AI Niche Simulator',
+        title: 'Enter your niche',
+        subtitle: 'Get an instant strategy preview for your business.',
+        placeholder: 'E.g.: dental clinic, fitness center, online school...',
+        btnText: 'Generate Strategy',
+        ctaAfter: 'Launch system for my niche',
+        results: {
+          default: {
+            tag: 'Analysis complete',
+            headline: 'Your niche strategy is ready',
+            metrics: [
+              { label: 'Reach potential', val: '180K–420K' },
+              { label: 'CPL forecast', val: '$2–6' },
+              { label: 'Break-even', val: '3–6 weeks' },
+              { label: 'ROAS forecast', val: '4.2×–7.8×' },
+            ],
+            channels: ['Meta Ads', 'TikTok Organic', 'Google Search', 'Retargeting'],
+            desc: 'The By Invite Only system launches an integrated strategy: first capturing warm audience through content, then converting via targeted ads with automated lead handling.',
+          },
+        },
+      },
+      cases: {
+        label: 'Client cases',
+        title: 'Transformations',
+        subtitle: 'Real results from real businesses before and after launching the system.',
+        items: [
+          {
+            niche: 'Dental Clinic',
+            tag: 'Healthcare',
+            tagColor: 'var(--electric)',
+            before: { leads: '12', cpl: '$48', roas: '1.2×' },
+            after: { leads: '186', cpl: '$6', roas: '7.4×' },
+            period: 'in 90 days',
+            quote: 'We used to spend money on ads without knowing where clients came from. Now everything is transparent.',
+            author: 'Alexei K., clinic owner',
+          },
+          {
+            niche: 'Online School',
+            tag: 'EdTech',
+            tagColor: 'var(--neon-purple)',
+            before: { leads: '34', cpl: '$31', roas: '1.8×' },
+            after: { leads: '412', cpl: '$4.2', roas: '9.1×' },
+            period: 'in 60 days',
+            quote: 'The system literally doubled our revenue in two months. Now leads come while I sleep.',
+            author: 'Maria L., school founder',
+          },
+          {
+            niche: 'Fitness Club',
+            tag: 'Wellness',
+            tagColor: 'var(--gold)',
+            before: { leads: '8', cpl: '$72', roas: '0.9×' },
+            after: { leads: '243', cpl: '$8', roas: '6.2×' },
+            period: 'in 75 days',
+            quote: 'We were in the red. Now we have a waitlist and 3-month prepayments.',
+            author: 'Denis V., chain manager',
+          },
+        ],
+        beforeLabel: 'BEFORE',
+        afterLabel: 'AFTER',
+        leadsLabel: 'Leads/mo',
+        cplLabel: 'CPL',
+        roasLabel: 'ROAS',
+      },
+      process: {
+        label: 'How we work',
+        title: 'System launch',
+        subtitle: '5 stages from first meeting to autonomous client acquisition.',
+        steps: [
+          { num: '01', title: 'Strategy Session', desc: 'Deep audit of your business, niche and competitors. We develop an individual growth strategy.' },
+          { num: '02', title: 'System Build', desc: 'We build the website, set up CRM, automation and dashboard. Parallel work across all teams.' },
+          { num: '03', title: 'Traffic Launch', desc: 'We set up and launch ads on Meta, TikTok, Google. First leads within 24–48 hours.' },
+          { num: '04', title: 'Management & Optimization', desc: 'Daily monitoring, A/B tests, scaling profitable ad combos.' },
+          { num: '05', title: 'Growth & Scale', desc: 'Regular reports, strategy sessions, evolving the system as you grow.' },
+        ],
+      },
+      packages: {
+        label: 'Investment',
+        title: 'Choose a package',
+        subtitle: 'Three tiers — from launch to niche domination.',
+        items: [
+          {
+            name: 'Launch',
+            price: '$2,500',
+            period: '/mo',
+            desc: 'Perfect for starting out',
+            badge: null,
+            featured: false,
+            features: [
+              'High-converting landing page',
+              'Basic CRM + automation',
+              'Ads on one platform',
+              'Basic dashboard',
+              '1 SMM platform',
+              'Monthly report',
+            ],
+          },
+          {
+            name: 'Growth',
+            price: '$5,000',
+            period: '/mo',
+            desc: 'Optimal for growth',
+            badge: 'POPULAR',
+            featured: true,
+            features: [
+              'Multi-page site + landing pages',
+              'Full CRM + automation',
+              'Meta + TikTok + Google Ads',
+              'Live dashboard + analytics',
+              '3 SMM platforms',
+              'Weekly reports',
+              'Priority support',
+            ],
+          },
+          {
+            name: 'Dominance',
+            price: '$12,000',
+            period: '/mo',
+            desc: 'For market leaders',
+            badge: 'PREMIUM',
+            featured: false,
+            features: [
+              'Website ecosystem',
+              'Enterprise CRM + AI automation',
+              'All ad platforms',
+              'Real-time dashboard + BI',
+              'All SMM platforms + production',
+              'Daily reports',
+              'Dedicated team',
+              '24/7 strategist',
+            ],
+          },
+        ],
+        cta: 'Start with this package',
+      },
+      testimonials: {
+        label: 'Testimonials',
+        title: 'Client voices',
+        items: [
+          {
+            stars: 5,
+            text: 'By Invite Only is not just an agency. It\u2019s a partner who thinks like a business owner. In 3 months our revenue grew 4x.',
+            name: 'Andrew S.',
+            role: 'CEO, medical clinic, Moscow',
+          },
+          {
+            stars: 5,
+            text: 'I tried 4 agencies before them. Nobody gave such transparency and results. The dashboard is a separate delight.',
+            name: 'Karina M.',
+            role: 'Founder, online school',
+          },
+          {
+            stars: 5,
+            text: 'The system runs autonomously. Leads come at night, on weekends, on holidays. We can finally focus on the product.',
+            name: 'Igor V.',
+            role: 'Manager, fitness chain',
+          },
+        ],
+      },
+      cta: {
+        label: 'Ready to grow?',
+        title: 'Get access to the system',
+        subtitle: 'We accept a limited number of clients. Leave a request and we\u2019ll contact you within 2 hours.',
+        formTitle: 'Submit request',
+        fields: {
+          name: 'Your name',
+          phone: 'Phone / WhatsApp',
+          niche: 'Business niche',
+          budget: 'Ad budget',
+          message: 'Tell us about your business (optional)',
+        },
+        budgetOptions: [
+          'Up to $1,000/mo',
+          '$1,000 — $3,000/mo',
+          '$3,000 — $10,000/mo',
+          '$10,000+/mo',
+        ],
+        submitBtn: 'Submit request',
+        thankYouTitle: 'Request received!',
+        thankYouText: 'Our strategist will contact you within 2 hours. Check your WhatsApp and email.',
+        contactUs: 'Or write directly',
+      },
+      footer: {
+        tagline: 'The growth system that never sleeps.',
+        copyright: '© 2025 By Invite Only. All rights reserved.',
+        links: ['Privacy Policy', 'Terms of Service'],
+      },
+    },
+  },
+};
+
+// Хелпер для получения текущих текстов
+function t() { return CONFIG.texts[CONFIG.currentLang]; }
+</script>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <button onclick="closeMobileMenu()" style="position:absolute;top:24px;right:24px;background:none;border:none;color:var(--text-primary);font-size:28px;cursor:pointer;">×</button>
+  <nav id="mobileNav" style="display:flex;flex-direction:column;align-items:center;gap:32px;"></nav>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;">
+    <!-- Логотип -->
+    <a href="#" style="text-decoration:none;display:flex;align-items:center;gap:10px;">
+      <div class="logo-dot"></div>
+      <span class="logo-text electric" id="navLogo"></span>
+    </a>
+
+    <!-- Десктоп навигация -->
+    <nav id="desktopNav" style="display:flex;gap:32px;align-items:center;" class="hidden md:flex">
+    </nav>
+
+    <!-- Контролы -->
+    <div style="display:flex;align-items:center;gap:12px;">
+      <!-- Переключатель языка -->
+      <div class="lang-toggle">
+        <button class="lang-btn" id="btnRu" onclick="setLang('ru')">RU</button>
+        <button class="lang-btn" id="btnEn" onclick="setLang('en')">EN</button>
+      </div>
+      <!-- Тема -->
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">🌙</button>
+      <!-- CTA кнопка -->
+      <button class="btn-primary hidden md:block" id="navCta" onclick="scrollToForm()" style="padding:10px 22px;font-size:12px;"></button>
+      <!-- Бургер -->
+      <button onclick="openMobileMenu()" style="display:none;background:none;border:none;color:var(--text-primary);font-size:22px;cursor:pointer;" id="burgerBtn">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <canvas id="neural-canvas"></canvas>
+  <div class="hero-bg"></div>
+
+  <!-- Частицы -->
+  <div id="particles"></div>
+
+  <div style="position:relative;z-index:2;text-align:center;padding:0 20px;max-width:1000px;margin:0 auto;">
+    <div class="hero-badge fade-up" id="heroBadge"></div>
+
+    <h1 class="hero-title fade-up" id="heroTitle" style="margin-bottom:28px;"></h1>
+
+    <p class="hero-subtitle fade-up" id="heroSubtitle"></p>
+
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:60px;" class="fade-up">
+      <button class="btn-primary" id="heroCta1" onclick="scrollToForm()"></button>
+      <button class="btn-outline" id="heroCta2" onclick="document.getElementById('cases').scrollIntoView({behavior:'smooth'})"></button>
+    </div>
+
+    <!-- Статистика -->
+    <div class="hero-stats fade-up" id="heroStats"></div>
+
+    <!-- Теги платформ -->
+    <div class="tags-scroll" style="justify-content:center;margin-top:32px;" id="platformTags"></div>
+  </div>
+
+  <!-- Скролл-индикатор -->
+  <div style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0.5;">
+    <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.15em;color:var(--text-secondary);">SCROLL</div>
+    <div style="width:1px;height:40px;background:linear-gradient(to bottom, var(--electric), transparent);animation:pulse-dot 2s ease-in-out infinite;"></div>
+  </div>
+</section>
+
+<!-- ===== GROWTH OS ===== -->
+<section class="section" id="growth-os">
+  <div style="max-width:1280px;margin:0 auto;padding:0 40px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <div class="section-label" id="osLabel"></div>
+      <h2 class="section-title gradient-text-ep" id="osTitle"></h2>
+      <p class="section-subtitle" style="margin:0 auto;" id="osSubtitle"></p>
+    </div>
+
+    <!-- Схема Growth OS -->
+    <div id="osFlow" style="display:flex;flex-wrap:wrap;gap:12px;align-items:stretch;justify-content:center;"></div>
+
+    <!-- Описание интеграции -->
+    <div style="margin-top:48px;text-align:center;padding:32px;background:var(--glass);border:1px solid var(--border);border-radius:20px;">
+      <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:12px;">
+        <div class="live-dot"></div>
+        <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--electric);" id="liveLabel">СИСТЕМА АКТИВНА 24/7</span>
+      </div>
+      <p style="color:var(--text-secondary);font-size:14px;max-width:600px;margin:0 auto;" id="osLiveDesc"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DASHBOARD ===== -->
+<section class="section" id="dashboard" style="background:linear-gradient(180deg, transparent, rgba(0,240,255,0.02), transparent);">
+  <div style="max-width:1280px;margin:0 auto;padding:0 40px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <div class="section-label" id="dashLabel"></div>
+      <h2 class="section-title" id="dashTitle"></h2>
+      <p class="section-subtitle" style="margin:0 auto;" id="dashSubtitle"></p>
+    </div>
+
+    <!-- Фрейм дашборда -->
+    <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:28px;padding:32px;backdrop-filter:blur(20px);box-shadow:0 0 60px rgba(0,240,255,0.08);">
+      <!-- Заголовок дашборда -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:16px;">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div class="live-dot"></div>
+          <span style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--electric);" id="dashLive">LIVE DATA</span>
+        </div>
+        <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-secondary);" id="dashDate"></div>
+      </div>
+
+      <!-- Метрики -->
+      <div class="dashboard-grid" id="dashMetrics" style="margin-bottom:32px;"></div>
+
+      <!-- График -->
+      <div style="background:rgba(0,240,255,0.02);border:1px solid var(--border);border-radius:16px;padding:24px;">
+        <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:16px;" id="chartLabel"></div>
+        <div class="mini-chart" id="miniChart" style="height:80px;"></div>
+        <div style="display:flex;justify-content:space-between;margin-top:8px;">
+          <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);">Пн</span>
+          <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);">Вт</span>
+          <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);">Ср</span>
+          <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);">Чт</span>
+          <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);">Пт</span>
+          <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);">Сб</span>
+          <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);" id="todayLabel">Сег</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROI КАЛЬКУЛЯТОР ===== -->
+<section class="section" id="calculator">
+  <div style="max-width:1100px;margin:0 auto;padding:0 40px;">
+    <div style="text-align:center;margin-bottom:48px;">
+      <div class="section-label" id="calcLabel"></div>
+      <h2 class="section-title" id="calcTitle"></h2>
+      <p class="section-subtitle" style="margin:0 auto;" id="calcSubtitle"></p>
+    </div>
+
+    <div class="calculator-section">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;" id="calcGrid">
+        <!-- Слайдеры -->
+        <div>
+          <div style="margin-bottom:32px;">
+            <label class="form-label" id="calcBudgetLabel"></label>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <span style="font-family:var(--font-mono);font-size:13px;color:var(--text-secondary);">$100</span>
+              <span class="electric font-mono" style="font-size:18px;font-weight:700;" id="budgetVal">$2,000</span>
+              <span style="font-family:var(--font-mono);font-size:13px;color:var(--text-secondary);">$50,000</span>
+            </div>
+            <input type="range" class="calc-slider" id="budgetSlider" min="100" max="50000" value="2000" step="100" oninput="updateCalc()">
+          </div>
+
+          <div style="margin-bottom:32px;">
+            <label class="form-label" id="calcCheckLabel"></label>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <span style="font-family:var(--font-mono);font-size:13px;color:var(--text-secondary);">$50</span>
+              <span class="electric font-mono" style="font-size:18px;font-weight:700;" id="checkVal">$500</span>
+              <span style="font-family:var(--font-mono);font-size:13px;color:var(--text-secondary);">$10,000</span>
+            </div>
+            <input type="range" class="calc-slider" id="checkSlider" min="50" max="10000" value="500" step="50" oninput="updateCalc()">
+          </div>
+
+          <div>
+            <label class="form-label" id="calcConvLabel"></label>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <span style="font-family:var(--font-mono);font-size:13px;color:var(--text-secondary);">0.5%</span>
+              <span class="electric font-mono" style="font-size:18px;font-weight:700;" id="convVal">2%</span>
+              <span style="font-family:var(--font-mono);font-size:13px;color:var(--text-secondary);">15%</span>
+            </div>
+            <input type="range" class="calc-slider" id="convSlider" min="0.5" max="15" value="2" step="0.1" oninput="updateCalc()">
+          </div>
+        </div>
+
+        <!-- Результат -->
+        <div class="calc-result-box">
+          <div class="section-label" id="calcResultLabel" style="margin-bottom:8px;"></div>
+          <div class="result-big gradient-text-ep" id="calcResult">$0</div>
+          <div style="font-size:13px;color:var(--text-secondary);margin-bottom:24px;" id="calcResultSub"></div>
+
+          <div style="display:flex;justify-content:space-around;margin-bottom:28px;">
+            <div style="text-align:center;">
+              <div style="font-family:var(--font-display);font-size:24px;font-weight:800;color:var(--electric);" id="calcLeads">0</div>
+              <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);" id="calcLeadsLabel">ЗАЯВОК</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-family:var(--font-display);font-size:24px;font-weight:800;color:var(--neon-purple);" id="calcRoas">0×</div>
+              <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);">ROAS</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-family:var(--font-display);font-size:24px;font-weight:800;color:var(--gold);" id="calcExtra">+$0</div>
+              <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);" id="calcExtraLabel"></div>
+            </div>
+          </div>
+
+          <button class="btn-gold" id="calcCta" onclick="scrollToForm()" style="width:100%;"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AI СИМУЛЯТОР ===== -->
+<section class="section" id="simulator" style="background:linear-gradient(180deg, transparent, rgba(199,36,255,0.02), transparent);">
+  <div style="max-width:900px;margin:0 auto;padding:0 40px;">
+    <div style="text-align:center;margin-bottom:48px;">
+      <div class="section-label" id="simLabel"></div>
+      <h2 class="section-title" id="simTitle"></h2>
+      <p class="section-subtitle" style="margin:0 auto;" id="simSubtitle"></p>
+    </div>
+
+    <div style="display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;">
+      <input class="simulator-input" id="simInput" type="text" style="flex:1;min-width:240px;" />
+      <button class="btn-primary" id="simBtn" onclick="runSimulator()" style="flex-shrink:0;"></button>
+    </div>
+
+    <!-- Результат симулятора -->
+    <div class="simulator-result" id="simResult">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+        <div class="live-dot"></div>
+        <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--electric);" id="simTag"></span>
+      </div>
+      <h3 style="font-family:var(--font-display);font-size:22px;font-weight:800;margin-bottom:20px;" id="simHeadline"></h3>
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px;" id="simMetrics"></div>
+
+      <div style="margin-bottom:20px;">
+        <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:10px;" id="simChannelsLabel">КАНАЛЫ / CHANNELS</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;" id="simChannels"></div>
+      </div>
+
+      <p style="color:var(--text-secondary);font-size:14px;line-height:1.7;margin-bottom:28px;" id="simDesc"></p>
+
+      <!-- Форма после результата симулятора -->
+      <div style="background:linear-gradient(135deg,rgba(0,240,255,0.06),rgba(199,36,255,0.06));border:1px solid rgba(0,240,255,0.2);border-radius:16px;padding:24px;text-align:center;">
+        <p style="font-family:var(--font-display);font-weight:700;font-size:16px;margin-bottom:16px;" id="simCtaText"></p>
+        <button class="btn-primary" id="simCtaBtn" onclick="scrollToForm()"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== КЕЙСЫ ===== -->
+<section class="section" id="cases">
+  <div style="max-width:1280px;margin:0 auto;padding:0 40px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <div class="section-label" id="casesLabel"></div>
+      <h2 class="section-title" id="casesTitle"></h2>
+      <p class="section-subtitle" style="margin:0 auto;" id="casesSubtitle"></p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;" id="casesGrid"></div>
+  </div>
+</section>
+
+<!-- ===== ПРОЦЕСС ===== -->
+<section class="section" id="process" style="background:linear-gradient(180deg, transparent, rgba(255,215,0,0.02), transparent);">
+  <div style="max-width:900px;margin:0 auto;padding:0 40px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <div class="section-label" id="processLabel"></div>
+      <h2 class="section-title" id="processTitle"></h2>
+      <p class="section-subtitle" style="margin:0 auto;" id="processSubtitle"></p>
+    </div>
+
+    <div id="processSteps"></div>
+  </div>
+</section>
+
+<!-- ===== ПАКЕТЫ ===== -->
+<section class="section" id="packages">
+  <div style="max-width:1280px;margin:0 auto;padding:0 40px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <div class="section-label" id="packagesLabel"></div>
+      <h2 class="section-title" id="packagesTitle"></h2>
+      <p class="section-subtitle" style="margin:0 auto;" id="packagesSubtitle"></p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:start;" id="packagesGrid"></div>
+  </div>
+</section>
+
+<!-- ===== ОТЗЫВЫ ===== -->
+<section class="section" id="testimonials">
+  <div style="max-width:1280px;margin:0 auto;padding:0 40px;">
+    <div style="text-align:center;margin-bottom:64px;">
+      <div class="section-label" id="testimonialsLabel"></div>
+      <h2 class="section-title" id="testimonialsTitle"></h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;" id="testimonialsGrid"></div>
+  </div>
+</section>
+
+<!-- ===== ФИНАЛЬНАЯ CTA + ФОРМА ===== -->
+<section class="section" id="cta">
+  <div style="max-width:1000px;margin:0 auto;padding:0 40px;">
+    <div class="cta-bg">
+      <div class="section-label" id="ctaLabel" style="margin-bottom:16px;display:inline-block;"></div>
+      <h2 class="section-title gradient-text" id="ctaTitle" style="margin-bottom:20px;"></h2>
+      <p class="section-subtitle" style="margin:0 auto 60px;max-width:500px;" id="ctaSubtitle"></p>
+
+      <!-- Форма -->
+      <div id="contactForm" style="text-align:left;max-width:600px;margin:0 auto;">
+        <h3 style="font-family:var(--font-display);font-size:22px;font-weight:800;margin-bottom:32px;text-align:center;" id="formTitle"></h3>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+          <div>
+            <label class="form-label" id="fieldNameLabel"></label>
+            <input class="form-input" type="text" id="fieldName" required>
+          </div>
+          <div>
+            <label class="form-label" id="fieldPhoneLabel"></label>
+            <input class="form-input" type="tel" id="fieldPhone" required>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+          <div>
+            <label class="form-label" id="fieldNicheLabel"></label>
+            <input class="form-input" type="text" id="fieldNiche" required>
+          </div>
+          <div>
+            <label class="form-label" id="fieldBudgetLabel"></label>
+            <select class="form-select" id="fieldBudget">
+            </select>
+          </div>
+        </div>
+        <div style="margin-bottom:24px;">
+          <label class="form-label" id="fieldMsgLabel"></label>
+          <textarea class="form-textarea" id="fieldMsg" rows="4" style="resize:vertical;"></textarea>
+        </div>
+
+        <button class="btn-primary" id="submitBtn" onclick="submitForm()" style="width:100%;padding:18px;font-size:15px;"></button>
+      </div>
+
+      <!-- Thank you -->
+      <div class="thank-you" id="thankYou">
+        <div class="thank-you-icon">🎉</div>
+        <h3 style="font-family:var(--font-display);font-size:32px;font-weight:800;margin-bottom:16px;" id="thankYouTitle"></h3>
+        <p style="color:var(--text-secondary);font-size:16px;max-width:400px;margin:0 auto 32px;" id="thankYouText"></p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a id="waLink" href="#" target="_blank" class="btn-primary" style="text-decoration:none;">WhatsApp</a>
+          <a id="tgLink" href="#" target="_blank" class="btn-outline" style="text-decoration:none;">Telegram</a>
+        </div>
+      </div>
+
+      <!-- Прямой контакт -->
+      <div style="text-align:center;margin-top:40px;" id="directContactWrap">
+        <p style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:16px;" id="ctaContactLabel"></p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="#" id="waDirectLink" target="_blank" class="btn-outline" style="text-decoration:none;font-size:12px;padding:10px 22px;">WhatsApp ↗</a>
+          <a href="#" id="tgDirectLink" target="_blank" class="btn-outline" style="text-decoration:none;font-size:12px;padding:10px 22px;">Telegram ↗</a>
+          <a id="emailLink" href="#" class="btn-outline" style="text-decoration:none;font-size:12px;padding:10px 22px;">Email ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="footer">
+  <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;">
+    <div>
+      <div class="footer-logo electric" id="footerLogo"></div>
+      <div style="font-size:13px;color:var(--text-secondary);margin-top:6px;" id="footerTagline"></div>
+    </div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;">
+      <a href="#" style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em;color:var(--text-secondary);text-decoration:none;" id="footerLink1"></a>
+      <a href="#" style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.08em;color:var(--text-secondary);text-decoration:none;" id="footerLink2"></a>
+    </div>
+    <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-secondary);" id="footerCopy"></div>
+  </div>
+</footer>
+
+<!-- ===== СКРИПТЫ / SCRIPTS ===== -->
+<script>
+// ==========================================
+// НЕЙРОННАЯ СЕТЬ / NEURAL NETWORK CANVAS
+// ==========================================
+(function() {
+  const canvas = document.getElementById('neural-canvas');
+  const ctx = canvas.getContext('2d');
+  let nodes = [], animFrame;
+  const isDark = () => CONFIG.currentTheme === 'dark';
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  function createNodes() {
+    nodes = [];
+    const count = Math.min(Math.floor(window.innerWidth / 60), 28);
+    for (let i = 0; i < count; i++) {
+      nodes.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        r: Math.random() * 3 + 1,
+        pulse: Math.random() * Math.PI * 2,
+      });
+    }
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const dark = isDark();
+    const time = Date.now() * 0.001;
+
+    // Обновляем позиции
+    nodes.forEach(n => {
+      n.x += n.vx;
+      n.y += n.vy;
+      n.pulse += 0.02;
+      if (n.x < 0 || n.x > canvas.width) n.vx *= -1;
+      if (n.y < 0 || n.y > canvas.height) n.vy *= -1;
+    });
+
+    // Рисуем связи
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const dx = nodes[j].x - nodes[i].x;
+        const dy = nodes[j].y - nodes[i].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        const maxDist = 200;
+        if (dist < maxDist) {
+          const alpha = (1 - dist / maxDist) * (dark ? 0.25 : 0.15);
+          const pulse = Math.sin(time + nodes[i].pulse) * 0.5 + 0.5;
+          // Чередуем цвета
+          const r = i % 3;
+          let color;
+          if (r === 0) color = `rgba(0,240,255,${alpha * pulse})`;
+          else if (r === 1) color = `rgba(199,36,255,${alpha * pulse})`;
+          else color = `rgba(255,215,0,${alpha * 0.5 * pulse})`;
+          ctx.beginPath();
+          ctx.moveTo(nodes[i].x, nodes[i].y);
+          ctx.lineTo(nodes[j].x, nodes[j].y);
+          ctx.strokeStyle = color;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      }
+    }
+
+    // Рисуем узлы
+    nodes.forEach((n, i) => {
+      const pulse = Math.sin(n.pulse) * 0.5 + 0.5;
+      const r = i % 3;
+      let color;
+      if (r === 0) color = `rgba(0,240,255,${(dark ? 0.7 : 0.5) * pulse})`;
+      else if (r === 1) color = `rgba(199,36,255,${(dark ? 0.7 : 0.5) * pulse})`;
+      else color = `rgba(255,215,0,${(dark ? 0.5 : 0.3) * pulse})`;
+
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r * (1 + pulse * 0.5), 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
+
+      // Свечение
+      const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r * 8);
+      grd.addColorStop(0, color.replace(/[\d.]+\)$/, `${0.15 * pulse})`));
+      grd.addColorStop(1, 'transparent');
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r * 8, 0, Math.PI * 2);
+      ctx.fillStyle = grd;
+      ctx.fill();
+    });
+
+    animFrame = requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', () => { resize(); createNodes(); });
+  resize();
+  createNodes();
+  draw();
+})();
+
+// ==========================================
+// ЧАСТИЦЫ / FLOATING PARTICLES
+// ==========================================
+(function() {
+  const container = document.getElementById('particles');
+  const colors = ['rgba(0,240,255,0.4)', 'rgba(199,36,255,0.3)', 'rgba(255,215,0,0.2)'];
+  for (let i = 0; i < 15; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 4 + 2;
+    p.style.cssText = `
+      width: ${size}px; height: ${size}px;
+      left: ${Math.random() * 100}%;
+      background: ${colors[Math.floor(Math.random() * colors.length)]};
+      animation-duration: ${Math.random() * 20 + 15}s;
+      animation-delay: ${Math.random() * -20}s;
+    `;
+    container.appendChild(p);
+  }
+})();
+
+// ==========================================
+// NAVBAR SCROLL / НАВБАР СКРОЛЛ
+// ==========================================
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) navbar.classList.add('scrolled');
+  else navbar.classList.remove('scrolled');
+});
+
+// ==========================================
+// ПЕРЕКЛЮЧЕНИЕ ЯЗЫКА / LANGUAGE SWITCH
+// ==========================================
+function setLang(lang) {
+  CONFIG.currentLang = lang;
+  const btnRu = document.getElementById('btnRu');
+  const btnEn = document.getElementById('btnEn');
+  if (btnRu) btnRu.classList.toggle('active', lang === 'ru');
+  if (btnEn) btnEn.classList.toggle('active', lang === 'en');
+  document.documentElement.lang = lang;
+  safeRenderAll();
+}
+
+// ==========================================
+// ПЕРЕКЛЮЧЕНИЕ ТЕМЫ / THEME TOGGLE
+// ==========================================
+function toggleTheme() {
+  CONFIG.currentTheme = CONFIG.currentTheme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', CONFIG.currentTheme);
+  document.getElementById('themeToggle').textContent = CONFIG.currentTheme === 'dark' ? '🌙' : '☀️';
+}
+
+// Определяем тему системы при загрузке
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+  CONFIG.currentTheme = 'light';
+  document.documentElement.setAttribute('data-theme', 'light');
+  document.getElementById('themeToggle').textContent = '☀️';
+}
+
+// ==========================================
+// МОБИЛЬНОЕ МЕНЮ / MOBILE MENU
+// ==========================================
+function openMobileMenu() {
+  document.getElementById('mobileMenu').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMobileMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ==========================================
+// КАЛЬКУЛЯТОР ROI / ROI CALCULATOR
+// ==========================================
+function updateCalc() {
+  const budget = parseFloat(document.getElementById('budgetSlider').value);
+  const check = parseFloat(document.getElementById('checkSlider').value);
+  const conv = parseFloat(document.getElementById('convSlider').value);
+  const txt = t();
+
+  document.getElementById('budgetVal').textContent = '$' + budget.toLocaleString();
+  document.getElementById('checkVal').textContent = '$' + check.toLocaleString();
+  document.getElementById('convVal').textContent = conv.toFixed(1) + '%';
+
+  // Базовый результат
+  const clicks = (budget / 0.8);
+  const leads = Math.round(clicks * (conv / 100));
+  const baseRevenue = leads * check;
+  // С улучшением BIO
+  const improvedRevenue = baseRevenue * txt.calculator.multiplier;
+  const extra = improvedRevenue - baseRevenue;
+  const roas = (improvedRevenue / budget).toFixed(1);
+
+  document.getElementById('calcResult').textContent = '$' + Math.round(improvedRevenue).toLocaleString();
+  document.getElementById('calcLeads').textContent = Math.round(leads * txt.calculator.multiplier).toLocaleString();
+  document.getElementById('calcRoas').textContent = roas + '×';
+  document.getElementById('calcExtra').textContent = '+$' + Math.round(extra).toLocaleString();
+}
+
+// ==========================================
+// AI СИМУЛЯТОР / AI SIMULATOR
+// ==========================================
+function runSimulator() {
+  const input = document.getElementById('simInput').value.trim();
+  if (!input) return;
+  const txt = t().simulator.results.default;
+
+  // Анимация загрузки
+  const btn = document.getElementById('simBtn');
+  btn.textContent = '⏳';
+  btn.disabled = true;
+
+  setTimeout(() => {
+    btn.textContent = t().simulator.btnText;
+    btn.disabled = false;
+
+    const result = document.getElementById('simResult');
+    result.classList.add('show');
+
+    document.getElementById('simTag').textContent = txt.tag;
+    document.getElementById('simHeadline').textContent = txt.headline + ': ' + input;
+
+    // Метрики
+    const metricsEl = document.getElementById('simMetrics');
+    metricsEl.innerHTML = '';
+    txt.metrics.forEach(m => {
+      metricsEl.innerHTML += `
+        <div style="background:rgba(0,240,255,0.06);border:1px solid rgba(0,240,255,0.15);border-radius:12px;padding:16px;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:20px;font-weight:800;color:var(--electric);">${m.val}</div>
+          <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-secondary);margin-top:4px;">${m.label}</div>
+        </div>`;
+    });
+
+    // Каналы
+    const channelsEl = document.getElementById('simChannels');
+    channelsEl.innerHTML = '';
+    txt.channels.forEach(c => {
+      channelsEl.innerHTML += `<span class="tag" style="background:rgba(199,36,255,0.1);border-color:rgba(199,36,255,0.25);color:var(--neon-purple);">${c}</span>`;
+    });
+
+    document.getElementById('simDesc').textContent = txt.desc;
+    document.getElementById('simCtaText').textContent = t().simulator.ctaAfter;
+    document.getElementById('simCtaBtn').textContent = t().simulator.ctaAfter;
+
+    result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 1200);
+}
+
+// ==========================================
+// ФОРМА / FORM SUBMIT
+// ==========================================
+function submitForm() {
+  const name = document.getElementById('fieldName').value.trim();
+  const phone = document.getElementById('fieldPhone').value.trim();
+  const niche = document.getElementById('fieldNiche').value.trim();
+
+  if (!name || !phone || !niche) {
+    // Подсветка пустых полей
+    [['fieldName', name], ['fieldPhone', phone], ['fieldNiche', niche]].forEach(([id, val]) => {
+      if (!val) {
+        const el = document.getElementById(id);
+        el.style.borderColor = '#FF4444';
+        setTimeout(() => el.style.borderColor = '', 2000);
+      }
+    });
+    return;
+  }
+
+  // Имитируем отправку
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = '⏳ ...';
+  btn.disabled = true;
+
+  setTimeout(() => {
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('directContactWrap').style.display = 'none';
+    document.getElementById('thankYou').classList.add('show');
+
+    const txt = t();
+    document.getElementById('thankYouTitle').textContent = txt.cta.thankYouTitle;
+    document.getElementById('thankYouText').textContent = txt.cta.thankYouText;
+
+    // Ссылки
+    const waMsg = encodeURIComponent(`Привет! Меня зовут ${name}. Хочу узнать о системе By Invite Only. Ниша: ${niche}`);
+    document.getElementById('waLink').href = `https://wa.me/${CONFIG.contacts.whatsapp.replace('+', '')}?text=${waMsg}`;
+    document.getElementById('tgLink').href = `https://t.me/${CONFIG.contacts.telegram.replace('@', '')}`;
+  }, 1500);
+}
+
+// ==========================================
+// СКРОЛЛ К ФОРМЕ / SCROLL TO FORM
+// ==========================================
+function scrollToForm() {
+  document.getElementById('cta').scrollIntoView({ behavior: 'smooth' });
+  setTimeout(() => document.getElementById('fieldName').focus(), 800);
+}
+
+// ==========================================
+// АНИМАЦИИ ПРИ СКРОЛЛЕ / SCROLL ANIMATIONS
+// ==========================================
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+// ==========================================
+// АНИМАЦИЯ ЦИФР / NUMBER ANIMATION
+// ==========================================
+function animateNumber(el, target, duration = 2000, isFloat = false, prefix = '', suffix = '') {
+  const start = Date.now();
+  const startVal = 0;
+  const update = () => {
+    const elapsed = Date.now() - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = startVal + (target - startVal) * eased;
+    el.textContent = prefix + (isFloat ? current.toFixed(1) : Math.round(current).toLocaleString()) + suffix;
+    if (progress < 1) requestAnimationFrame(update);
+  };
+  update();
+}
+
+// ==========================================
+// ГЛАВНЫЙ РЕНДЕР / MAIN RENDER
+// ==========================================
+function renderAll() {
+  const txt = t();
+
+  // ===== NAVBAR =====
+  document.getElementById('navLogo').textContent = txt.nav.logo;
+  document.getElementById('navCta').textContent = txt.nav.cta;
+
+  const desktopNav = document.getElementById('desktopNav');
+  desktopNav.innerHTML = txt.nav.links.map((link, i) => `
+    <a href="${txt.nav.hrefs[i]}" style="font-family:var(--font-display);font-size:13px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;transition:color 0.3s;" onmouseover="this.style.color='var(--electric)'" onmouseout="this.style.color='var(--text-secondary)'">${link}</a>
+  `).join('');
+
+  const mobileNav = document.getElementById('mobileNav');
+  mobileNav.innerHTML = txt.nav.links.map((link, i) => `
+    <a href="${txt.nav.hrefs[i]}" onclick="closeMobileMenu()" style="font-family:var(--font-display);font-size:24px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;color:var(--text-primary);text-decoration:none;">${link}</a>
+  `).join('');
+
+  // ===== HERO =====
+  document.getElementById('heroBadge').innerHTML = `<span class="badge-dot"></span>${txt.hero.badge}`;
+  document.getElementById('heroTitle').innerHTML = `
+    <span class="gradient-text-ep">${txt.hero.title_line1} ${txt.hero.title_line2}</span><br>
+    <span style="color:var(--text-primary);">${txt.hero.title_line3}</span><br>
+    <span class="electric glow-text-electric">${txt.hero.title_line4}</span>
+  `;
+  document.getElementById('heroSubtitle').textContent = txt.hero.subtitle;
+  document.getElementById('heroCta1').textContent = txt.hero.cta1;
+  document.getElementById('heroCta2').textContent = txt.hero.cta2;
+
+  const statsEl = document.getElementById('heroStats');
+  statsEl.innerHTML = txt.hero.stats.map((s, i) => {
+    const colors = ['var(--electric)', 'var(--neon-purple)', 'var(--gold)', '#00FF88'];
+    return `
+      <div class="stat-item">
+        <div class="stat-num" style="color:${colors[i]};">${s.num}</div>
+        <div class="stat-label">${s.label}</div>
+      </div>
+    `;
+  }).join('');
+
+  document.getElementById('platformTags').innerHTML = [
+    'Meta Ads', 'TikTok', 'Google Ads', 'Instagram', 'Facebook', 'YouTube', 'CRM', 'Automation'
+  ].map(tag => `<span class="tag">${tag}</span>`).join('');
+
+  // ===== GROWTH OS =====
+  document.getElementById('osLabel').textContent = txt.growthOS.label;
+  document.getElementById('osTitle').textContent = txt.growthOS.title;
+  document.getElementById('osSubtitle').textContent = txt.growthOS.subtitle;
+  document.getElementById('liveLabel').textContent = CONFIG.currentLang === 'ru' ? 'СИСТЕМА АКТИВНА 24/7' : 'SYSTEM ACTIVE 24/7';
+  document.getElementById('osLiveDesc').textContent = CONFIG.currentLang === 'ru'
+    ? 'Все модули системы взаимодействуют в реальном времени, автоматически передавая данные и оптимизируя каждый этап воронки.'
+    : 'All system modules interact in real time, automatically passing data and optimizing every stage of the funnel.';
+
+  const osFlow = document.getElementById('osFlow');
+  osFlow.innerHTML = '';
+  txt.growthOS.nodes.forEach((node, i) => {
+    const nodeEl = document.createElement('div');
+    nodeEl.className = 'os-node';
+    nodeEl.style.cssText = `flex:1;min-width:160px;max-width:220px;`;
+    nodeEl.innerHTML = `
+      <div class="os-icon" style="background:${node.color};">${node.icon}</div>
+      <div style="font-family:var(--font-display);font-weight:700;font-size:14px;margin-bottom:8px;line-height:1.3;">${node.title}</div>
+      <div style="font-size:12px;color:var(--text-secondary);line-height:1.5;">${node.desc}</div>
+    `;
+    osFlow.appendChild(nodeEl);
+
+    if (i < txt.growthOS.nodes.length - 1) {
+      const arrow = document.createElement('div');
+      arrow.className = 'os-arrow';
+      arrow.style.cssText = 'flex-shrink:0;';
+      arrow.innerHTML = '→';
+      osFlow.appendChild(arrow);
+    }
+  });
+
+  // ===== DASHBOARD =====
+  document.getElementById('dashLabel').textContent = txt.dashboard.label;
+  document.getElementById('dashTitle').textContent = txt.dashboard.title;
+  document.getElementById('dashSubtitle').textContent = txt.dashboard.subtitle;
+  document.getElementById('chartLabel').textContent = txt.dashboard.chartLabel;
+  document.getElementById('todayLabel').textContent = CONFIG.currentLang === 'ru' ? 'Сег' : 'Today';
+
+  const now = new Date();
+  document.getElementById('dashDate').textContent = now.toLocaleDateString(CONFIG.currentLang === 'ru' ? 'ru-RU' : 'en-US', { weekday:'long', day:'numeric', month:'long' });
+
+  const metricsEl = document.getElementById('dashMetrics');
+  metricsEl.innerHTML = txt.dashboard.metrics.map(m => `
+    <div class="dash-metric">
+      <div class="metric-value" style="color:${m.color};" data-val="${m.value}" data-prefix="${m.prefix}" data-suffix="${m.suffix}" data-float="${m.value % 1 !== 0}">${m.prefix}${m.value}${m.suffix}</div>
+      <div class="metric-label">${m.label}</div>
+      <div class="metric-delta">${m.delta}</div>
+    </div>
+  `).join('');
+
+  // Анимируем числа в дашборде при появлении
+  setTimeout(() => {
+    document.querySelectorAll('.metric-value').forEach(el => {
+      const val = parseFloat(el.dataset.val);
+      const isFloat = el.dataset.float === 'true';
+      animateNumber(el, val, 2000, isFloat, el.dataset.prefix, el.dataset.suffix);
+    });
+  }, 300);
+
+  // График
+  const chartData = txt.dashboard.chartData;
+  const maxVal = Math.max(...chartData);
+  const chart = document.getElementById('miniChart');
+  chart.innerHTML = chartData.map((v, i) => `
+    <div class="bar" style="height:${(v/maxVal)*100}%;animation-delay:${i*0.1}s;opacity:${i === chartData.length-1 ? 1 : 0.6};"></div>
+  `).join('');
+
+  // ===== CALCULATOR =====
+  document.getElementById('calcLabel').textContent = txt.calculator.label;
+  document.getElementById('calcTitle').textContent = txt.calculator.title;
+  document.getElementById('calcSubtitle').textContent = txt.calculator.subtitle;
+  document.getElementById('calcBudgetLabel').textContent = txt.calculator.fields.budget;
+  document.getElementById('calcCheckLabel').textContent = txt.calculator.fields.avgCheck;
+  document.getElementById('calcConvLabel').textContent = txt.calculator.fields.convRate;
+  document.getElementById('calcResultLabel').textContent = txt.calculator.resultLabel;
+  document.getElementById('calcResultSub').textContent = txt.calculator.resultSub;
+  document.getElementById('calcCta').textContent = txt.calculator.ctaAfter;
+  document.getElementById('calcLeadsLabel').textContent = CONFIG.currentLang === 'ru' ? 'ЗАЯВОК' : 'LEADS';
+  document.getElementById('calcExtraLabel').textContent = txt.calculator.extraLabel;
+  updateCalc();
+
+  // ===== SIMULATOR =====
+  document.getElementById('simLabel').textContent = txt.simulator.label;
+  document.getElementById('simTitle').textContent = txt.simulator.title;
+  document.getElementById('simSubtitle').textContent = txt.simulator.subtitle;
+  document.getElementById('simInput').placeholder = txt.simulator.placeholder;
+  document.getElementById('simBtn').textContent = txt.simulator.btnText;
+  document.getElementById('simChannelsLabel').textContent = CONFIG.currentLang === 'ru' ? 'КАНАЛЫ' : 'CHANNELS';
+
+  // ===== CASES =====
+  document.getElementById('casesLabel').textContent = txt.cases.label;
+  document.getElementById('casesTitle').textContent = txt.cases.title;
+  document.getElementById('casesSubtitle').textContent = txt.cases.subtitle;
+
+  const casesGrid = document.getElementById('casesGrid');
+  casesGrid.innerHTML = txt.cases.items.map(c => `
+    <div class="case-card fade-up">
+      <div style="padding:28px 28px 0;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+          <div style="font-family:var(--font-display);font-size:20px;font-weight:800;">${c.niche}</div>
+          <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;padding:6px 14px;border-radius:50px;background:rgba(0,240,255,0.1);color:${c.tagColor};border:1px solid ${c.tagColor}30;">${c.tag}</span>
+        </div>
+
+        <div class="case-before-after" style="grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;display:grid;margin-bottom:20px;">
+          <div class="case-metric-box before-box">
+            <div style="font-family:var(--font-mono);font-size:10px;color:rgba(255,80,80,0.8);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">${txt.cases.beforeLabel}</div>
+            <div style="font-family:var(--font-display);font-size:22px;font-weight:800;color:rgba(255,80,80,0.9);">${c.before.leads}</div>
+            <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);">${txt.cases.leadsLabel}</div>
+            <div style="font-size:13px;color:var(--text-secondary);margin-top:6px;">${txt.cases.cplLabel}: ${c.before.cpl}</div>
+            <div style="font-size:13px;color:var(--text-secondary);">${txt.cases.roasLabel}: ${c.before.roas}</div>
+          </div>
+          <div style="font-size:24px;color:var(--electric);text-align:center;">→</div>
+          <div class="case-metric-box after-box">
+            <div style="font-family:var(--font-mono);font-size:10px;color:rgba(0,255,136,0.8);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">${txt.cases.afterLabel}</div>
+            <div style="font-family:var(--font-display);font-size:22px;font-weight:800;color:rgba(0,255,136,0.9);">${c.after.leads}</div>
+            <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);">${txt.cases.leadsLabel}</div>
+            <div style="font-size:13px;color:var(--text-secondary);margin-top:6px;">${txt.cases.cplLabel}: ${c.after.cpl}</div>
+            <div style="font-size:13px;color:var(--text-secondary);">${txt.cases.roasLabel}: ${c.after.roas}</div>
+          </div>
+        </div>
+
+        <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--electric);margin-bottom:16px;">${c.period}</div>
+      </div>
+
+      <div style="padding:24px 28px;border-top:1px solid var(--border);background:rgba(0,240,255,0.02);">
+        <p style="font-style:italic;color:var(--text-secondary);font-size:14px;line-height:1.6;margin-bottom:12px;">"${c.quote}"</p>
+        <div style="font-family:var(--font-display);font-weight:700;font-size:13px;">${c.author}</div>
+      </div>
+    </div>
+  `).join('');
+
+  // ===== PROCESS =====
+  document.getElementById('processLabel').textContent = txt.process.label;
+  document.getElementById('processTitle').textContent = txt.process.title;
+  document.getElementById('processSubtitle').textContent = txt.process.subtitle;
+
+  document.getElementById('processSteps').innerHTML = txt.process.steps.map(s => `
+    <div class="process-step fade-up">
+      <div class="step-num">${s.num}</div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:20px;font-weight:800;margin-bottom:10px;">${s.title}</div>
+        <div style="color:var(--text-secondary);font-size:15px;line-height:1.7;">${s.desc}</div>
+      </div>
+    </div>
+  `).join('');
+
+  // ===== PACKAGES =====
+  document.getElementById('packagesLabel').textContent = txt.packages.label;
+  document.getElementById('packagesTitle').textContent = txt.packages.title;
+  document.getElementById('packagesSubtitle').textContent = txt.packages.subtitle;
+
+  document.getElementById('packagesGrid').innerHTML = txt.packages.items.map(p => `
+    <div class="package-card ${p.featured ? 'featured' : ''} fade-up">
+      ${p.badge ? `<div class="package-badge">${p.badge}</div>` : ''}
+      <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:${p.featured ? 'var(--electric)' : 'var(--text-secondary)'};margin-bottom:8px;">${p.name}</div>
+      <div class="price-big gradient-text-ep">${p.price}<span style="font-size:18px;font-weight:400;opacity:0.6;">${p.period}</span></div>
+      <div style="font-size:13px;color:var(--text-secondary);margin-top:8px;margin-bottom:28px;">${p.desc}</div>
+      <div style="margin-bottom:32px;">
+        ${p.features.map(f => `<div class="feature-item"><span class="feature-check">✦</span><span>${f}</span></div>`).join('')}
+      </div>
+      <button class="${p.featured ? 'btn-primary' : 'btn-outline'}" onclick="scrollToForm()" style="width:100%;padding:16px;">${txt.packages.cta}</button>
+    </div>
+  `).join('');
+
+  // ===== TESTIMONIALS =====
+  document.getElementById('testimonialsLabel').textContent = txt.testimonials.label;
+  document.getElementById('testimonialsTitle').textContent = txt.testimonials.title;
+
+  document.getElementById('testimonialsGrid').innerHTML = txt.testimonials.items.map(t => `
+    <div class="testimonial-card fade-up">
+      <div class="stars">${'★'.repeat(t.stars)}</div>
+      <p class="quote-text">"${t.text}"</p>
+      <div class="author-name">${t.name}</div>
+      <div class="author-title">${t.role}</div>
+    </div>
+  `).join('');
+
+  // ===== CTA + FORM =====
+  document.getElementById('ctaLabel').textContent = txt.cta.label;
+  document.getElementById('ctaTitle').textContent = txt.cta.title;
+  document.getElementById('ctaSubtitle').textContent = txt.cta.subtitle;
+  document.getElementById('formTitle').textContent = txt.cta.formTitle;
+  document.getElementById('fieldNameLabel').textContent = txt.cta.fields.name;
+  document.getElementById('fieldPhoneLabel').textContent = txt.cta.fields.phone;
+  document.getElementById('fieldNicheLabel').textContent = txt.cta.fields.niche;
+  document.getElementById('fieldBudgetLabel').textContent = txt.cta.fields.budget;
+  document.getElementById('fieldMsgLabel').textContent = txt.cta.fields.message;
+  document.getElementById('fieldMsg').placeholder = txt.cta.fields.message;
+  document.getElementById('submitBtn').textContent = txt.cta.submitBtn;
+  document.getElementById('ctaContactLabel').textContent = txt.cta.contactUs;
+
+  // Опции бюджета
+  document.getElementById('fieldBudget').innerHTML = txt.cta.budgetOptions.map(o => `<option>${o}</option>`).join('');
+
+  // ===== LINKS =====
+  const waNum = CONFIG.contacts.whatsapp.replace('+', '').replace(/\s/g, '');
+  document.getElementById('waDirectLink').href = `https://wa.me/${waNum}`;
+  document.getElementById('tgDirectLink').href = `https://t.me/${CONFIG.contacts.telegram.replace('@', '')}`;
+  document.getElementById('emailLink').href = `mailto:${CONFIG.contacts.email}`;
+  document.getElementById('emailLink').textContent = `Email ↗`;
+
+  // ===== FOOTER =====
+  document.getElementById('footerLogo').textContent = txt.nav.logo;
+  document.getElementById('footerTagline').textContent = txt.footer.tagline;
+  document.getElementById('footerCopy').textContent = txt.footer.copyright;
+  document.getElementById('footerLink1').textContent = txt.footer.links[0];
+  document.getElementById('footerLink2').textContent = txt.footer.links[1];
+
+  // Запускаем IntersectionObserver для fade-up элементов
+  setTimeout(() => {
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  }, 100);
+}
+
+// ==========================================
+// ГЛОБАЛЬНЫЙ ПЕРЕХВАТЧИК ОШИБОК / GLOBAL ERROR HANDLER
+// ==========================================
+window.addEventListener('error', (e) => {
+  console.error('JS Error:', e.message, 'at', e.filename, 'line', e.lineno);
+});
+window.addEventListener('unhandledrejection', (e) => {
+  console.error('Unhandled Promise rejection:', e.reason);
+});
+
+// ==========================================
+// БЕЗОПАСНЫЙ РЕНДЕР / SAFE RENDER WRAPPER
+// ==========================================
+function safeRenderAll() {
+  try {
+    renderAll();
+  } catch (err) {
+    console.error('renderAll() failed:', err);
+    // Показываем fallback чтобы страница не была пустой
+    document.body.style.opacity = '1';
+    const fallback = document.getElementById('hero');
+    if (fallback) {
+      fallback.style.display = 'flex';
+      fallback.style.alignItems = 'center';
+      fallback.style.justifyContent = 'center';
+    }
+  }
+}
+
+// ==========================================
+// АДАПТИВНЫЙ БУРГЕР / RESPONSIVE BURGER
+// ==========================================
+function checkMobile() {
+  const burgerBtn = document.getElementById('burgerBtn');
+  if (!burgerBtn) return;
+  burgerBtn.style.display = window.innerWidth < 768 ? 'block' : 'none';
+}
+window.addEventListener('resize', checkMobile);
+
+// ==========================================
+// ИНИЦИАЛИЗАЦИЯ / INITIALIZATION
+// ==========================================
+function init() {
+  try {
+    // Инициализация языка
+    const btnRu = document.getElementById('btnRu');
+    const btnEn = document.getElementById('btnEn');
+    if (btnRu) btnRu.classList.toggle('active', CONFIG.currentLang === 'ru');
+    if (btnEn) btnEn.classList.toggle('active', CONFIG.currentLang === 'en');
+
+    // Рендер
+    safeRenderAll();
+    checkMobile();
+
+    // Плавное появление hero-элементов
+    setTimeout(() => {
+      document.querySelectorAll('#hero .fade-up').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), i * 150);
+      });
+    }, 300);
+  } catch (err) {
+    console.error('init() failed:', err);
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  // DOM уже готов (скрипт выполняется после парсинга)
+  init();
+}
+
+// ==========================================
+// ЖИВЫЕ ЦИФРЫ В ДАШБОРДЕ (обновление)
+// ==========================================
+setInterval(() => {
+  // Имитируем живые данные
+  const metricEls = document.querySelectorAll('.metric-value');
+  if (metricEls.length > 0) {
+    const firstEl = metricEls[0];
+    const current = parseInt(firstEl.textContent.replace(/\D/g, '')) || 847;
+    const delta = Math.floor(Math.random() * 5) - 1;
+    if (delta > 0) {
+      const newVal = current + delta;
+      firstEl.textContent = newVal.toLocaleString();
+      firstEl.style.transform = 'scale(1.05)';
+      setTimeout(() => firstEl.style.transform = '', 300);
+    }
+  }
+}, 3000);
+</script>
+
+<!-- ==========================================
+ИНСТРУКЦИЯ ПО РЕДАКТИРОВАНИЮ
+==========================================
+
+КАК РЕДАКТИРОВАТЬ САЙТ:
+Все данные хранятся в объекте CONFIG в теге <script> в начале файла.
+
+1. ИЗМЕНИТЬ ТЕКСТЫ:
+   Найдите CONFIG.texts.ru или CONFIG.texts.en и редактируйте соответствующие поля.
+   Например, для изменения заголовка hero:
+   hero.title_line1: 'Ваш новый заголовок'
+
+2. ИЗМЕНИТЬ ЦЕНЫ (ПАКЕТЫ):
+   CONFIG.texts.ru.packages.items[0].price = '$3,000' (Launch)
+   CONFIG.texts.ru.packages.items[1].price = '$6,000' (Growth)
+   CONFIG.texts.ru.packages.items[2].price = '$15,000' (Dominance)
+
+3. ДОБАВИТЬ КЕЙС:
+   Добавьте новый объект в CONFIG.texts.ru.cases.items:
+   {
+     niche: 'Название ниши',
+     tag: 'Тег',
+     tagColor: 'var(--electric)',
+     before: { leads: '10', cpl: '$50', roas: '1.0×' },
+     after: { leads: '200', cpl: '$5', roas: '8×' },
+     period: 'за 60 дней',
+     quote: 'Текст отзыва',
+     author: 'Имя, должность',
+   }
+
+4. ИЗМЕНИТЬ ЦВЕТА:
+   В разделе :root {} в блоке <style>:
+   --electric: #00F0FF   — основной акцент (электрик голубой)
+   --neon-purple: #C724FF — фиолетовый акцент
+   --gold: #FFD700        — золотой акцент
+
+5. ИЗМЕНИТЬ КОНТАКТЫ:
+   CONFIG.contacts.whatsapp = '+7XXXXXXXXXX'
+   CONFIG.contacts.telegram = '@yourusername'
+   CONFIG.contacts.email = 'your@email.com'
+
+6. ДОБАВИТЬ ОТЗЫВ:
+   В CONFIG.texts.ru.testimonials.items добавьте:
+   { stars: 5, text: 'Текст отзыва', name: 'Имя', role: 'Должность, компания' }
+
+7. ИЗМЕНИТЬ СТАТИСТИКУ В HERO:
+   CONFIG.texts.ru.hero.stats = [
+     { num: '500%', label: 'Ваша метрика' }, ...
+   ]
+
+8. НАСТРОИТЬ ROI-КАЛЬКУЛЯТОР:
+   CONFIG.texts.ru.calculator.multiplier = 4.8  — множитель улучшения
+
+9. ИЗМЕНИТЬ ШРИФТЫ:
+   В <link href="...fonts.googleapis.com..."> поменяйте названия шрифтов.
+   В CSS: --font-display, --font-mono, --font-body
+
+10. ПОДКЛЮЧИТЬ РЕАЛЬНУЮ ФОРМУ:
+    В функции submitForm() замените setTimeout на fetch() к вашему API:
+    fetch('/api/leads', { method:'POST', body: JSON.stringify({name, phone, niche}) })
+
+СТРУКТУРА ОБЪЕКТА CONFIG:
+CONFIG.currentLang     — текущий язык
+CONFIG.currentTheme    — текущая тема
+CONFIG.contacts        — контактные данные
+CONFIG.texts.ru        — все тексты на русском
+CONFIG.texts.en        — все тексты на английском
+  ├── nav              — навбар
+  ├── hero             — hero-секция
+  ├── growthOS         — схема Growth OS
+  ├── dashboard        — дашборд
+  ├── calculator       — ROI-калькулятор
+  ├── simulator        — AI-симулятор
+  ├── cases            — кейсы
+  ├── process          — процесс работы
+  ├── packages         — пакеты/цены
+  ├── testimonials     — отзывы
+  ├── cta              — финальный CTA + форма
+  └── footer           — подвал
+
+========================================== -->
+</body>
+</html>
