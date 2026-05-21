@@ -91,15 +91,36 @@ body{
 /* ═══════════════════════════════════════════
    NAVBAR
    ═══════════════════════════════════════════ */
-#nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:20px 40px;transition:all .42s cubic-bezier(.4,0,.2,1)}
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  padding:20px 40px;
+  transition:all .42s cubic-bezier(.4,0,.2,1);
+}
 #nav.scrolled{background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(32px);-webkit-backdrop-filter:blur(32px);border-bottom:1px solid var(--brd);padding:12px 40px}
 @media(max-width:768px){#nav{padding:14px 18px}#nav.scrolled{padding:10px 18px}}
-.nav-in{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.nav-in{
+  max-width: 1380px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
 .nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0}
 .logo-led{width:7px;height:7px;border-radius:50%;background:var(--A);box-shadow:0 0 8px var(--A),0 0 16px color-mix(in srgb,var(--A) 50%,transparent);animation:led 2.5s ease-in-out infinite;flex-shrink:0;transition:background .55s,box-shadow .55s}
 @keyframes led{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.62)}}
 .logo-txt{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--txt)}
-#nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+#nav-links{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  list-style: none;
+  flex: 1;
+  justify-content: center;
+  margin: 0 30px;
+}
 @media(max-width:900px){#nav-links{display:none}}
 .nav-a{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--txt2);text-decoration:none;position:relative;padding:3px 0;transition:color .28s;display:flex;align-items:center;min-height:44px}
 .nav-a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;background:var(--A);transition:width .3s cubic-bezier(.4,0,.2,1)}
