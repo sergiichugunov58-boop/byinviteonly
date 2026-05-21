@@ -145,7 +145,7 @@ body{
 .chip:hover{border-color:color-mix(in srgb,var(--A) 40%,transparent);color:var(--A)}
 
 /* ═══════════════════════════════════════════════════
-   NAVBAR — ИСПРАВЛЕННАЯ ФИНАЛЬНАЯ ВЕРСИЯ
+   NAVBAR — ЧИСТАЯ ИСПРАВЛЕННАЯ ВЕРСИЯ
 ═══════════════════════════════════════════════════ */
 #nav {
   position: fixed;
@@ -156,148 +156,63 @@ body{
   background: transparent;
   border-bottom: 1px solid transparent;
   backdrop-filter: none;
-  -webkit-backdrop-filter: none;
   padding: 20px 40px;
-  transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s ease;
 }
 
-/* Жидкое стекло при скролле */
 #nav.scrolled {
-  background: color-mix(in srgb, var(--bg) 84%, transparent);
-  backdrop-filter: blur(32px) saturate(1.8);
-  -webkit-backdrop-filter: blur(32px) saturate(1.8);
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(28px) saturate(1.8);
   border-bottom: 1px solid var(--brd);
   padding: 14px 40px;
 }
 
-@media (max-width: 768px) {
-  #nav { padding: 16px 20px; }
-  #nav.scrolled { padding: 12px 20px; }
-}
-
-/* Контейнер */
 .nav-in {
-  max-width: 1420px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
 }
 
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  text-decoration: none;
-  flex-shrink: 0;
-}
-
-/* Меню — горизонтально по ширине */
 #nav-links {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 36px;
   list-style: none;
-  flex: 1;
-  margin: 0 30px;
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 900px) {
-  #nav-links { display: none !important; }
+  #nav-links { display: none; }
 }
 
 .nav-a {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 11.5px;
   font-weight: 500;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--txt2);
   text-decoration: none;
-  position: relative;
-  padding: 8px 0;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
 }
-.nav-a:hover { color: var(--A); }
+.nav-a:hover {
+  color: var(--A);
+}
 
-/* Контролы (темы, язык, кнопка) */
+/* Контролы */
 .nav-ctrl {
   display: flex;
   align-items: center;
   gap: 12px;
-  flex-shrink: 0;
 }
 
-/* Переключатель тем */
-.theme-sw {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background: color-mix(in srgb, var(--A) 5%, transparent);
-  border: 1px solid var(--brd);
-  border-radius: 100px;
-  padding: 5px 7px;
-  transition: all .3s;
-}
-.td {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: all .28s;
-  flex-shrink: 0;
-}
-.td:hover { transform: scale(1.25); }
-.td.on { border-color: var(--txt); transform: scale(1.15); }
-
-/* Переключатель языка */
-.lang-sw {
-  display: flex;
-  background: color-mix(in srgb, var(--A) 5%, transparent);
-  border: 1px solid var(--brd);
-  border-radius: 100px;
-  padding: 3px;
-  gap: 2px;
-}
-.lb {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: .1em;
-  padding: 5px 10px;
-  border-radius: 100px;
-  border: none;
-  cursor: pointer;
-  background: transparent;
-  color: var(--txt2);
-  transition: all .28s;
-  min-height: 30px;
-  display: flex;
-  align-items: center;
-}
-.lb.on {
-  background: linear-gradient(135deg, var(--A), var(--B));
-  color: #fff;
-}
-
-/* Бургер */
+/* Мобильный бургер */
 #burger {
   display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  min-width: 48px;
-  min-height: 48px;
 }
-@media (max-width: 900px) { #burger { display: flex; } }
+@media (max-width: 900px) {
+  #burger { display: flex; }
+}
 /* ═══════════════════════════════════════════════════
    HERO
 ═══════════════════════════════════════════════════ */
@@ -1847,14 +1762,28 @@ function render(){
   const clrs4=['var(--A)','var(--B)','var(--C)','#00FF88'];
 
   // Navbar
-  const navLogo=document.getElementById('navLogo');if(navLogo) navLogo.textContent=t.nav.logo;
-  const navCta=document.getElementById('navCta');if(navCta) navCta.textContent=t.nav.cta;
-  const navLinks=document.getElementById('navLinks');
-  if(navLinks) navLinks.innerHTML=t.nav.links.map((l,i)=>`<li><a class="nav-a" href="${t.nav.hrefs[i]}">${l}</a></li>`).join('');
-  const mobNav=document.getElementById('mob-nav');
-  if(mobNav) mobNav.innerHTML=t.nav.links.map((l,i)=>
-    `<a class="mob-a" href="${t.nav.hrefs[i]}" onclick="closeMob()"><span class="mob-a-num">0${i+1}</span>${l}</a>`
+  const navLogo = document.getElementById('navLogo');
+if (navLogo) navLogo.textContent = t.nav.logo;
+
+const navCta = document.getElementById('navCta');
+if (navCta) navCta.textContent = t.nav.cta;
+
+const navLinks = document.getElementById('navLinks');
+if (navLinks) {
+  navLinks.innerHTML = t.nav.links.map((l, i) => 
+    `<li><a class="nav-a" href="${t.nav.hrefs[i]}">${l}</a></li>`
   ).join('');
+}
+
+// Мобильное меню
+const mobNav = document.getElementById('mob-nav');
+if (mobNav) {
+  mobNav.innerHTML = t.nav.links.map((l, i) => 
+    `<a class="mob-a" href="${t.nav.hrefs[i]}" onclick="closeMob()">
+       <span class="mob-a-num">0${i+1}</span>${l}
+     </a>`
+  ).join('');
+}
 
   // Hero
   const heroBadge=document.getElementById('heroBadge');if(heroBadge) heroBadge.textContent=t.hero.badge;
